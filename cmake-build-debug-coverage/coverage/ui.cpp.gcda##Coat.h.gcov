@@ -1,0 +1,67 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/Headers/Coat.h
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/ui.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/ui.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:
+        -:    3:#include <string>
+        -:    4:
+        -:    5:/*
+        -:    6: * COATS IDENTIFIED BY SIZE AND COLOR
+        -:    7: */
+        -:    8:class Coat {
+        -:    9:public:
+function _ZN4CoatC2Ev called 0 returned 0% blocks executed 0%
+    #####:   10:    Coat() : size{0}, color{""}, price{0.0f}, quantity{0}, photo{""} {};
+    %%%%%:   10-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   10-block  1
+call    4 never executed
+call    5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   10-block  2
+call    9 never executed
+    $$$$$:   10-block  3
+call   10 never executed
+    $$$$$:   10-block  4
+call   11 never executed
+    $$$$$:   10-block  5
+call   12 never executed
+    $$$$$:   10-block  6
+    $$$$$:   10-block  7
+call   13 never executed
+        -:   11:
+        -:   12:    Coat(int size, const std::string &color, float price, int quantity, const std::string &photo);
+        -:   13:
+        -:   14:    std::string get_color() const { return this->color; }
+        -:   15:
+        -:   16:    std::string get_photo() const { return this->photo; }
+        -:   17:
+function _ZNK4Coat9get_priceEv called 3 returned 100% blocks executed 100%
+        3:   18:    float get_price() const { return this->price; }
+        3:   18-block  0
+        -:   19:
+function _ZNK4Coat8get_sizeEv called 0 returned 0% blocks executed 0%
+    #####:   20:    int get_size() const { return this->size; }
+    %%%%%:   20-block  0
+        -:   21:
+        -:   22:    int get_quantity() const { return this->quantity; }
+        -:   23:
+        -:   24:    void update(int size, const std::string &color, float price, int quantity, const std::string &photo);
+        -:   25:
+        -:   26:    std::string to_string();
+        -:   27:
+        -:   28:    static int compare_coats(Coat c1, Coat c2);
+        -:   29:
+        -:   30:private:
+        -:   31:    int size;
+        -:   32:    std::string color;
+        -:   33:    float price;
+        -:   34:    int quantity;
+        -:   35:    std::string photo;
+        -:   36:};

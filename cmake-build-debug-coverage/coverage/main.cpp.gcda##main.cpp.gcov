@@ -1,0 +1,84 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/main.cpp
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/main.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "Headers/DynamicArray.h"
+        -:    3:#include "Headers/coat.h"
+        -:    4:#include "Headers/repo.h"
+        -:    5:#include "Headers/service.h"
+        -:    6:
+        -:    7:#include "Headers/ui.h"
+        -:    8:#include "Headers/tests.h"
+        -:    9:
+function main called 1 returned 100% blocks executed 100%
+        1:   10:int main() {
+        -:   11:
+        -:   12://    DynamicArray<Coat> test_arr;
+        -:   13://    test_arr.add(Coat());
+        -:   14://    for(int i = 0; i < test_arr.get_size(); i++) {
+        -:   15://        std::cout << test_arr[i].to_string() << "\n";
+        -:   16://    }
+        -:   17://    test_arr.remove(0);
+        -:   18://    for(int i = 0; i < test_arr.get_size(); i++) {
+        -:   19://        std::cout << test_arr[i].to_string() << "\n";
+        -:   20://    }
+        -:   21://    test_arr.add(Coat());
+        -:   22://    test_arr.add(Coat());
+        -:   23://    test_arr.add(Coat());
+        -:   24://    for(int i = 0; i < test_arr.get_size(); i++) {
+        -:   25://        std::cout << test_arr[i].to_string() << "\n";
+        -:   26://    }
+        -:   27://
+        -:   28://    test_arr.remove(1);
+        -:   29://    for(int i = 0; i < test_arr.get_size(); i++) {
+        -:   30://        std::cout << test_arr[i].to_string() << "\n";
+        -:   31://    }
+        -:   32://
+        -:   33://    std::cout << "---------\n";
+        -:   34://    DynamicArray<Coat> copy = DynamicArray(test_arr);
+        -:   35://    for(int i = 0; i < copy.get_size(); i++) {
+        -:   36://        std::cout << copy[i].to_string() << "\n";
+        -:   37://    }
+        -:   38://
+        -:   39://    test_arr.remove(0);
+        -:   40://    copy = test_arr;
+        -:   41://    for(int i = 0; i < copy.get_size(); i++) {
+        -:   42://        std::cout << copy[i].to_string() << "\n";
+        -:   43://    }
+        -:   44://
+        -:   45://    std::cout << "---------\n";
+        -:   46://    copy[0].update(1, "adawa", 1.0f, 1, "adawdwa");
+        -:   47://    std::cout << copy[0].to_string();
+        -:   48://    test_arr.clear();
+        -:   49://    std::cout<<test_arr.get_size();
+        -:   50:
+        -:   51:/*
+        -:   52:    Coat c1, c2;
+        -:   53:    Repo r;
+        -:   54:    Service s = Service(r);
+        -:   55:    //r.add(c2);
+        -:   56:    //std::cout << r.has(Coat());
+        -:   57:    //r.remove(c2);
+        -:   58:    s.add(12, "awdwada", 0, 0, "");
+        -:   59:    for(int i = 0; i < s.get_size(); i++) {
+        -:   60:        std::cout << s.get_repo().get_at(i).to_string() << "\n";
+        -:   61:    }
+        -:   62:    s.update(12, "awdwada", 12.0f, 12, "awdw");
+        -:   63:    for(int i = 0; i < s.get_size(); i++) {
+        -:   64:        std::cout << s.get_repo().get_at(i).to_string() << "\n";
+        -:   65:    }
+        -:   66:    s.remove(12, "awdwada");
+        -:   67:    for(int i = 0; i < s.get_size(); i++) {
+        -:   68:        std::cout << s.get_repo().get_at(i).to_string() << "\n";
+        -:   69:    }*/
+        1:   70:    tests();
+        1:   70-block  0
+call    0 returned 1
+        -:   71:
+        -:   72:/*    Repo r;
+        -:   73:    Service s = Service(r);
+        -:   74:    UI ui = UI(s);
+        -:   75:    ui.start_ui();*/
+        1:   76:    return 0;
+        -:   77:}

@@ -1,0 +1,684 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/Sources/ui.cpp
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/ui.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/ui.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "../Headers/ui.h"
+        -:    3:
+function _ZN2UIC2E7Service called 0 returned 0% blocks executed 0%
+    #####:    4:UI::UI(Service service) : service{service} {
+        -:    5:
+    #####:    6:}
+        -:    7:
+        -:    8:
+function _Z10print_menui called 0 returned 0% blocks executed 0%
+    #####:    9:void print_menu(int mode) {
+    #####:   10:    if(mode == 1) {
+    %%%%%:   10-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   11:        std::cout << "ADMINISTRATOR MODE MENU\n";
+    %%%%%:   11-block  0
+call    0 never executed
+    #####:   12:        std::cout << "1.add coat\n";
+call    0 never executed
+    #####:   13:        std::cout << "2.remove coat\n";
+call    0 never executed
+    #####:   14:        std::cout << "3.update coat\n";
+call    0 never executed
+    #####:   15:        std::cout << "4.list coats\n";
+call    0 never executed
+    #####:   16:        std::cout << "0.exit\n";
+call    0 never executed
+        -:   17:    } else {
+    #####:   18:        std::cout << "USER MODE MENU\n";
+    %%%%%:   18-block  0
+call    0 never executed
+        -:   19:    }
+    #####:   20:}
+        -:   21:
+function _Z11get_commandv called 0 returned 0% blocks executed 0%
+    #####:   22:int get_command() {
+        -:   23:    int t;
+    #####:   24:    std::cin >> t;
+    %%%%%:   24-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   25:    return t;
+    %%%%%:   25-block  0
+    %%%%%:   25-block  1
+        -:   26:}
+        -:   27:
+function _ZN2UI8generateEv called 0 returned 0% blocks executed 0%
+    #####:   28:void UI::generate() {
+    #####:   29:    for(int i = 1; i <= 15; i++) {
+    %%%%%:   29-block  0
+    %%%%%:   29-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   30:        this->service.add(i, std::to_string(i), float(i), i, std::to_string(i));
+    %%%%%:   30-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   30-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   30-block  2
+call    7 never executed
+call    8 never executed
+    $$$$$:   30-block  3
+call    9 never executed
+    $$$$$:   30-block  4
+    $$$$$:   30-block  5
+call   10 never executed
+        -:   31:    }
+    #####:   32:}
+    %%%%%:   32-block  0
+        -:   33:
+function _ZN2UI11handle_userEi called 0 returned 0% blocks executed 0%
+    #####:   34:void UI::handle_user(int size) {
+    #####:   35:    Repo basket, queue;
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   35-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+    $$$$$:   35-block  2
+call    7 never executed
+    $$$$$:   35-block  3
+call    8 never executed
+    #####:   36:    for(int i = 0; i < this->service.get_repo().get_size(); i++) {
+    %%%%%:   36-block  0
+    %%%%%:   36-block  1
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   36-block  2
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   36-block  3
+    #####:   37:        if(size == -1 || size == this->service.get_repo().get_at(i).get_size()){
+    %%%%%:   37-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   37-block  1
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   37-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   37-block  3
+    %%%%%:   37-block  4
+    %%%%%:   37-block  5
+branch  9 never executed
+branch 10 never executed
+    #####:   38:            queue.add(this->service.get_repo().get_at(i));
+    %%%%%:   38-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   38-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+        -:   39:        }
+        -:   40:    }
+    #####:   41:    bool total = false;
+    #####:   42:    int i = 0;
+    %%%%%:   42-block  0
+        -:   43:    float sum;
+    #####:   44:    while(!total) {
+    %%%%%:   44-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   45:        if(i == queue.get_size())
+    %%%%%:   45-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   45-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:   46:            i = 0;
+    %%%%%:   46-block  0
+        -:   47:
+    #####:   48:        std::cout << "Current Coat: \n" << queue.get_at(i).to_string();
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   48-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   48-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   48-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   48-block  4
+call   12 never executed
+    $$$$$:   48-block  5
+call   13 never executed
+    $$$$$:   48-block  6
+    #####:   49:        std::cout << "\nOPTIONS:\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   50:        std::cout << "1. Add\n";
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   51:        std::cout << "2. Next\n";
+    %%%%%:   51-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   52:        std::cout << "3. Total\n";
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   53:        int cmd;
+    #####:   54:        std::cin >> cmd;
+    %%%%%:   54-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   55:        switch(cmd) {
+    %%%%%:   55-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:   56:            case 3:
+    #####:   57:                total = true;
+    #####:   58:                break;
+    %%%%%:   58-block  0
+    #####:   59:            case 1:
+    #####:   60:                basket.add(queue.get_at(i));
+    %%%%%:   60-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   60-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   61:                std::cout << "\n Current basket total: ";
+    %%%%%:   61-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   62:                sum = 0;
+    #####:   63:                for(int j = 0; j < basket.get_size(); j++) {
+    %%%%%:   63-block  0
+    %%%%%:   63-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   63-block  2
+branch  3 never executed
+branch  4 never executed
+    #####:   64:                    sum += basket.get_at(j).get_price();
+    %%%%%:   64-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   64-block  1
+call    3 never executed
+        -:   65:                }
+    #####:   66:                std::cout << sum << "\n";
+    %%%%%:   66-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   66-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   67:                break;
+    %%%%%:   67-block  0
+    #####:   68:            case 2:
+    #####:   69:                std::cout << "\n Current basket total: ";
+    %%%%%:   69-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   70:                sum = 0;
+    #####:   71:                for(int j = 0; j < basket.get_size(); j++) {
+    %%%%%:   71-block  0
+    %%%%%:   71-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   71-block  2
+branch  3 never executed
+branch  4 never executed
+    #####:   72:                    sum += basket.get_at(j).get_price();
+    %%%%%:   72-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   72-block  1
+call    3 never executed
+        -:   73:                }
+    #####:   74:                std::cout << sum << "\n";
+    %%%%%:   74-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   74-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   75:                break;
+    %%%%%:   75-block  0
+    #####:   76:            default:
+    #####:   77:                std::cout << "\nINVALID COMMAND\n\n";
+    %%%%%:   77-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   78:                break;
+    %%%%%:   78-block  0
+        -:   79:
+        -:   80:        }
+    #####:   81:        i++;
+    %%%%%:   81-block  0
+        -:   82:    }
+        -:   83:
+        -:   84:
+    #####:   85:    std::cout << "\n Current basket total: ";
+    %%%%%:   85-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   86:    sum  = 0;
+    #####:   87:    for(int j = 0; j < basket.get_size(); j++) {
+    %%%%%:   87-block  0
+    %%%%%:   87-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   87-block  2
+branch  3 never executed
+branch  4 never executed
+    #####:   88:        sum += basket.get_at(j).get_price();
+    %%%%%:   88-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   88-block  1
+call    3 never executed
+        -:   89:    }
+    #####:   90:    std::cout << sum << "\n";
+    %%%%%:   90-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   90-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   91:    this->running = false;
+    %%%%%:   91-block  0
+call    0 never executed
+    #####:   92:}
+        -:   93:
+function _ZN2UI12handle_adminEi called 0 returned 0% blocks executed 0%
+    #####:   94:void UI::handle_admin(int cmd) {
+        -:   95:    int size;
+    #####:   96:    std::string color;
+    %%%%%:   96-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:   96-block  1
+call    2 never executed
+        -:   97:    float price;
+        -:   98:    int quantity;
+    #####:   99:    std::string photo;
+call    0 never executed
+    %%%%%:   99-block  0
+call    1 never executed
+    $$$$$:   99-block  1
+call    2 never executed
+        -:  100:
+    #####:  101:    switch (cmd) {
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  102:        case 0:
+    #####:  103:            this->running = false;
+    #####:  104:            break;
+    %%%%%:  104-block  0
+    #####:  105:        case 1:
+        -:  106:
+    #####:  107:            std::cout << "Introduce new coat size";
+    %%%%%:  107-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  108:            std::cin >> size;
+    %%%%%:  108-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  109:            std::cout << "Introduce new coat color";
+    %%%%%:  109-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  110:            std::cin >> color;
+    %%%%%:  110-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  111:            std::cout << "Introduce new coat price";
+    %%%%%:  111-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  112:            std::cin >> price;
+    %%%%%:  112-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  113:            std::cout << "Introduce new coat quantity";
+    %%%%%:  113-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  114:            std::cin >> quantity;
+    %%%%%:  114-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  115:            std::cout << "Introduce new coat photo link";
+    %%%%%:  115-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  116:            std::cin >> photo;
+    %%%%%:  116-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  117:
+        -:  118:
+    #####:  119:            if(this->service.get_repo().has(size, color)) {
+    %%%%%:  119-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  119-block  1
+branch  4 never executed
+branch  5 never executed
+    #####:  120:                std::cout << "\nCoat already exists\n\n";
+    %%%%%:  120-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  121:                break;
+    %%%%%:  121-block  0
+        -:  122:            }
+    #####:  123:            this->service.add(size, color, price, quantity, photo);
+    %%%%%:  123-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  124:
+    #####:  125:            break;
+    %%%%%:  125-block  0
+    #####:  126:        case 2:
+    #####:  127:            std::cout << "Introduce new coat size";
+    %%%%%:  127-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  128:            std::cin >> size;
+    %%%%%:  128-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  129:            std::cout << "Introduce new coat color";
+    %%%%%:  129-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  130:            std::cin >> color;
+    %%%%%:  130-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  131:
+        -:  132:
+    #####:  133:            if(!this->service.get_repo().has(size, color)) {
+    %%%%%:  133-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  133-block  1
+branch  4 never executed
+branch  5 never executed
+    #####:  134:                std::cout << "\nCoat does not exists\n\n";
+    %%%%%:  134-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  135:                break;
+    %%%%%:  135-block  0
+        -:  136:            }
+    #####:  137:            this->service.remove(size, color);
+    %%%%%:  137-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  138:            break;
+    %%%%%:  138-block  0
+    #####:  139:        case 3:
+    #####:  140:            std::cout << "Introduce existing coat size";
+    %%%%%:  140-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  141:            std::cin >> size;
+    %%%%%:  141-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  142:            std::cout << "Introduce existing coat color";
+    %%%%%:  142-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  143:            std::cin >> color;
+    %%%%%:  143-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  144:            std::cout << "Introduce new coat price";
+    %%%%%:  144-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  145:            std::cin >> price;
+    %%%%%:  145-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  146:            std::cout << "Introduce new coat quantity";
+    %%%%%:  146-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  147:            std::cin >> quantity;
+    %%%%%:  147-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  148:            std::cout << "Introduce new coat photo link";
+    %%%%%:  148-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  149:            std::cin >> photo;
+    %%%%%:  149-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  150:
+    #####:  151:            if(!this->service.get_repo().has(size, color)) {
+    %%%%%:  151-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  151-block  1
+branch  4 never executed
+branch  5 never executed
+    #####:  152:                std::cout << "\nCoat does not exists\n\n";
+    %%%%%:  152-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  153:                break;
+    %%%%%:  153-block  0
+        -:  154:            }
+    #####:  155:            this->service.update(size, color, price, quantity, photo);
+    %%%%%:  155-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  156:            break;
+    %%%%%:  156-block  0
+        -:  157:
+    #####:  158:        case 4:
+        -:  159:        {
+    #####:  160:            std::string s;
+    %%%%%:  160-block  0
+call    0 never executed
+    %%%%%:  160-block  1
+call    1 never executed
+    $$$$$:  160-block  2
+call    2 never executed
+    #####:  161:            for(int i = 0; i < this->service.get_size(); i++) {
+    %%%%%:  161-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  161-block  1
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  161-block  2
+    #####:  162:                s += this->service.get_repo().get_at(i).to_string();
+    %%%%%:  162-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  162-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  162-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  162-block  3
+call   10 never executed
+    $$$$$:  162-block  4
+call   11 never executed
+    $$$$$:  162-block  5
+    #####:  163:                s += "\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  164:            }
+    #####:  165:            std::cout << s;
+    %%%%%:  165-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  166:        }
+    #####:  167:            break;
+    #####:  168:        default:
+    #####:  169:            std::cout << "\nINVALID COMMAND\n\n";
+    %%%%%:  169-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  170:            break;
+    %%%%%:  170-block  0
+        -:  171:    }
+    #####:  172:}
+        -:  173:
+function _ZN2UI8start_uiEv called 0 returned 0% blocks executed 0%
+    #####:  174:void UI::start_ui() {
+    #####:  175:    generate();
+    %%%%%:  175-block  0
+call    0 never executed
+    #####:  176:    std::cout << "Enter 1 for admin mode or 0 for user mode: ";
+call    0 never executed
+    #####:  177:    std::cin >> this->mode;
+call    0 never executed
+    #####:  178:    while(this->running) {
+    %%%%%:  178-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  178-block  1
+    #####:  179:        print_menu(this->mode);
+    %%%%%:  179-block  0
+call    0 never executed
+    #####:  180:        if(this->mode == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  181:            int cmd = get_command();
+    %%%%%:  181-block  0
+call    0 never executed
+    #####:  182:            handle_admin(cmd);
+call    0 never executed
+        -:  183:        } else {
+        -:  184:            int size;
+    #####:  185:            std::cout << "Enter the size of the coat you are looking for or -1 to display all coats: ";
+    %%%%%:  185-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  186:            std::cin >> size;
+    %%%%%:  186-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  187:            handle_user(size);
+    %%%%%:  187-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  188:        }
+        -:  189:    }
+    #####:  190:}
+    %%%%%:  190-block  0
+        -:  191:

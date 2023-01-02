@@ -1,0 +1,217 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/Sources/repo.cpp
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/repo.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/repo.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "../Headers/repo.h"
+        -:    2:
+function _ZN4Repo3hasERK4Coat called 2 returned 100% blocks executed 70%
+        2:    3:bool Repo::has(const Coat &c) {
+       2*:    4:    for(int i = 0; i < this->get_size(); i++) {
+        2:    4-block  0
+        2:    4-block  1
+call    0 returned 2
+branch  1 taken 1 (fallthrough)
+branch  2 taken 1
+    %%%%%:    4-block  2
+        1:    5:        if(Coat::compare_coats(c, this->data[i]) == 0) {
+        1:    5-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:    5-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:    5-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+    $$$$$:    5-block  3
+call   12 never executed
+    $$$$$:    5-block  4
+    $$$$$:    5-block  5
+call   13 never executed
+        1:    6:            return true;
+        1:    6-block  0
+        -:    7:        }
+        -:    8:    }
+        1:    9:    return false;
+        1:    9-block  0
+        -:   10:}
+        -:   11:
+function _ZN4Repo3addERK4Coat called 2 returned 100% blocks executed 100%
+        2:   12:void Repo::add(const Coat &c) {
+        2:   13:    this->data.add(c);
+        2:   13-block  0
+call    0 returned 2
+        2:   14:}
+        -:   15:
+function _ZN4Repo6removeERK4Coat called 2 returned 100% blocks executed 70%
+        2:   16:void Repo::remove(const Coat &c) {
+       2*:   17:    for(int i = 0; i < this->get_size(); i++) {
+        2:   17-block  0
+        2:   17-block  1
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0
+    %%%%%:   17-block  2
+        2:   18:        if(Coat::compare_coats(c, this->data[i]) == 0) {
+        2:   18-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0 (throw)
+        2:   18-block  1
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
+        2:   18-block  2
+call    8 returned 2
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0
+    $$$$$:   18-block  3
+call   12 never executed
+    $$$$$:   18-block  4
+    $$$$$:   18-block  5
+call   13 never executed
+        2:   19:            this->data.remove(i);
+        2:   19-block  0
+call    0 returned 2
+        2:   20:            return;
+        -:   21:        }
+        -:   22:    }
+        -:   23:}
+        -:   24:
+function _ZN4Repo6get_atEi called 4 returned 100% blocks executed 100%
+        4:   25:Coat &Repo::get_at(int index) {
+        4:   26:    return this->data[index];
+        4:   26-block  0
+call    0 returned 4
+        -:   27:}
+        -:   28:
+function _ZN4Repo9get_indexEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 3 returned 100% blocks executed 58%
+        3:   29:int Repo::get_index(int size, const std::string &color) {
+        9:   30:    Coat c = Coat(size, color, 0, 0, "");
+        3:   30-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        3:   30-block  1
+call    4 returned 3
+branch  5 taken 3 (fallthrough)
+branch  6 taken 0 (throw)
+call    7 returned 3
+        3:   30-block  2
+call    8 returned 3
+    $$$$$:   30-block  3
+    $$$$$:   30-block  4
+    $$$$$:   30-block  5
+call    9 never executed
+       3*:   31:    for(int i = 0; i < this->get_size(); i++) {
+        3:   31-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   31-block  1
+branch  3 taken 2 (fallthrough)
+branch  4 taken 1
+    %%%%%:   31-block  2
+        2:   32:        if(Coat::compare_coats(c, this->data[i]) == 0) {
+        2:   32-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   32-block  1
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:   32-block  2
+call    7 returned 2
+branch  8 taken 2 (fallthrough)
+branch  9 taken 0 (throw)
+        2:   32-block  3
+call   10 returned 2
+call   11 returned 2
+branch 12 taken 2 (fallthrough)
+branch 13 taken 0
+    $$$$$:   32-block  4
+call   14 never executed
+    $$$$$:   32-block  5
+    $$$$$:   32-block  6
+call   15 never executed
+    $$$$$:   32-block  7
+        2:   33:            return i;
+        2:   33-block  0
+        -:   34:        }
+        -:   35:    }
+        1:   36:    return -1;
+        1:   36-block  0
+        -:   37:}
+        -:   38:
+function _ZN4Repo3hasEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 58%
+        2:   39:bool Repo::has(int size, const std::string& color) {
+        6:   40:    Coat c = Coat(size, color, 0.0f, 0, "");
+        2:   40-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   40-block  1
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+call    7 returned 2
+        2:   40-block  2
+call    8 returned 2
+    $$$$$:   40-block  3
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+call    9 never executed
+       2*:   41:    for(int i = 0; i < this->get_size(); i++) {
+        2:   41-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   41-block  1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 1
+    %%%%%:   41-block  2
+        1:   42:        if(Coat::compare_coats(c, this->data[i]) == 0) {
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   42-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   42-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   42-block  3
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   42-block  4
+call   14 never executed
+    $$$$$:   42-block  5
+    $$$$$:   42-block  6
+call   15 never executed
+    $$$$$:   42-block  7
+        1:   43:            return true;
+        1:   43-block  0
+        -:   44:        }
+        -:   45:    }
+        1:   46:    return false;
+        1:   46-block  0
+        -:   47:}

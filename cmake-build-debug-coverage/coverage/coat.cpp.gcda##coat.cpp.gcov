@@ -1,0 +1,212 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/Sources/coat.cpp
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/coat.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/coat.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "../Headers/coat.h"
+        -:    2:
+function _ZN4CoatC2EiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEfiS7_ called 9 returned 100% blocks executed 80%
+        9:    3:Coat::Coat(int size, const std::string &color, float price, int quantity, const std::string &photo) : size{size}, color{color}, price{price}, quantity{quantity}, photo{photo}{
+        9:    3-block  0
+call    0 returned 9
+call    1 returned 9
+branch  2 taken 9 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:    3-block  1
+call    4 never executed
+        -:    4:
+        9:    5:}
+        9:    5-block  0
+        -:    6:
+function _ZN4Coat9to_stringB5cxx11Ev called 2 returned 100% blocks executed 47%
+        2:    7:std::string Coat::to_string() {
+        2:    8:    std::string s;
+        2:    8-block  0
+call    0 returned 2
+        2:    9:    s += "Size: " + std::to_string(this->size) + " | ";
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:    9-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:    9-block  1
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:    9-block  2
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:    9-block  3
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:    9-block  4
+call   15 never executed
+    $$$$$:    9-block  5
+    $$$$$:    9-block  6
+call   16 never executed
+    $$$$$:    9-block  7
+    $$$$$:    9-block  8
+call   17 never executed
+    $$$$$:    9-block  9
+        2:   10:    s += "Color: " + this->color + " | ";
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   10-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   10-block  1
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:   10-block  2
+call    9 returned 2
+call   10 returned 2
+    $$$$$:   10-block  3
+call   11 never executed
+    $$$$$:   10-block  4
+    $$$$$:   10-block  5
+call   12 never executed
+    $$$$$:   10-block  6
+        2:   11:    s += "Price: " + std::to_string(this->price) + " | ";
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   11-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   11-block  1
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:   11-block  2
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:   11-block  3
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:   11-block  4
+call   15 never executed
+    $$$$$:   11-block  5
+    $$$$$:   11-block  6
+call   16 never executed
+    $$$$$:   11-block  7
+    $$$$$:   11-block  8
+call   17 never executed
+    $$$$$:   11-block  9
+        2:   12:    s += "Quantity: " + std::to_string(this->quantity) + " | ";
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   12-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   12-block  1
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:   12-block  2
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:   12-block  3
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:   12-block  4
+call   15 never executed
+    $$$$$:   12-block  5
+    $$$$$:   12-block  6
+call   16 never executed
+    $$$$$:   12-block  7
+    $$$$$:   12-block  8
+call   17 never executed
+    $$$$$:   12-block  9
+        2:   13:    s += "Photo: " + this->photo;
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   13-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   13-block  1
+call    6 returned 2
+    $$$$$:   13-block  2
+call    7 never executed
+    $$$$$:   13-block  3
+        2:   14:    return s;
+        2:   14-block  0
+        -:   15:}
+        -:   16:
+function _ZN4Coat6updateEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEfiS7_ called 2 returned 100% blocks executed 100%
+        2:   17:void Coat::update(int size, const std::string &color, float price, int quantity, const std::string &photo) {
+        2:   18:    this->size = size;
+        2:   19:    this->color = color;
+        2:   19-block  0
+call    0 returned 2
+        2:   20:    this->price = price;
+        2:   21:    this->quantity = quantity;
+        2:   22:    this->photo = photo;
+call    0 returned 2
+        2:   23:}
+        -:   24:
+function _ZN4Coat13compare_coatsES_S_ called 10 returned 100% blocks executed 72%
+       10:   25:int Coat::compare_coats(Coat c1, Coat c2) {
+       10:   26:    if(c1.get_size() == c2.get_size() && c1.get_color() == c2.get_color())
+       10:   26-block  0
+call    0 returned 10
+call    1 returned 10
+branch  2 taken 9 (fallthrough)
+branch  3 taken 1
+        9:   26-block  1
+call    4 returned 9
+branch  5 taken 9 (fallthrough)
+branch  6 taken 0 (throw)
+        9:   26-block  2
+call    7 returned 9
+branch  8 taken 9 (fallthrough)
+branch  9 taken 0 (throw)
+        9:   26-block  3
+call   10 returned 9
+branch 11 taken 9 (fallthrough)
+branch 12 taken 0
+        9:   26-block  4
+        1:   26-block  5
+       10:   26-block  6
+branch 13 taken 9 (fallthrough)
+branch 14 taken 1
+        9:   26-block  7
+call   15 returned 9
+       10:   26-block  8
+branch 16 taken 9 (fallthrough)
+branch 17 taken 1
+        9:   26-block  9
+call   18 returned 9
+       10:   26-block 10
+branch 19 taken 9 (fallthrough)
+branch 20 taken 1
+    $$$$$:   26-block 11
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   26-block 12
+call   23 never executed
+    $$$$$:   26-block 13
+    $$$$$:   26-block 14
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   26-block 15
+call   26 never executed
+        9:   27:        return 0;
+        9:   27-block  0
+        1:   28:    return -1;
+        1:   28-block  0
+        -:   29:}

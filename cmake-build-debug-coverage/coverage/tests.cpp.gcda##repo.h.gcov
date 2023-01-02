@@ -1,0 +1,26 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/Headers/repo.h
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/tests.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/tests.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include "DynamicArray.h"
+        -:    3:#include "Coat.h"
+        -:    4:
+        -:    5:class Repo {
+        -:    6:private:
+        -:    7:    DynamicArray<Coat> data;
+        -:    8:public:
+        -:    9:    void add(const Coat &c);
+        -:   10:    void remove(const Coat &c);
+        -:   11:
+        -:   12:    bool has(const Coat &c);
+        -:   13:    bool has(int size, const std::string& color);
+        -:   14:
+function _ZN4Repo8get_sizeEv called 0 returned 0% blocks executed 0%
+    #####:   15:    int get_size() { return this->data.get_size(); }
+    %%%%%:   15-block  0
+call    0 never executed
+        -:   16:    int get_index(int size, const std::string& color);
+        -:   17:    Coat& get_at(int index);
+        -:   18:
+        -:   19:};

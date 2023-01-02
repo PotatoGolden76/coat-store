@@ -1,0 +1,45 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/Headers/coat.h
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/coat.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/coat.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:
+        -:    3:#include <string>
+        -:    4:
+        -:    5:/*
+        -:    6: * COATS IDENTIFIED BY SIZE AND COLOR
+        -:    7: */
+        -:    8:class Coat {
+        -:    9:public:
+        -:   10:    Coat() : size{0}, color{""}, price{0.0f}, quantity{0}, photo{""} {};
+        -:   11:
+        -:   12:    Coat(int size, const std::string &color, float price, int quantity, const std::string &photo);
+        -:   13:
+function _ZNK4Coat9get_colorB5cxx11Ev called 21 returned 100% blocks executed 100%
+       21:   14:    std::string get_color() const { return this->color; }
+       21:   14-block  0
+call    0 returned 21
+        -:   15:
+        -:   16:    std::string get_photo() const { return this->photo; }
+        -:   17:
+        -:   18:    float get_price() const { return this->price; }
+        -:   19:
+function _ZNK4Coat8get_sizeEv called 23 returned 100% blocks executed 100%
+       23:   20:    int get_size() const { return this->size; }
+       23:   20-block  0
+        -:   21:
+        -:   22:    int get_quantity() const { return this->quantity; }
+        -:   23:
+        -:   24:    void update(int size, const std::string &color, float price, int quantity, const std::string &photo);
+        -:   25:
+        -:   26:    std::string to_string();
+        -:   27:
+        -:   28:    static int compare_coats(Coat c1, Coat c2);
+        -:   29:
+        -:   30:private:
+        -:   31:    int size;
+        -:   32:    std::string color;
+        -:   33:    float price;
+        -:   34:    int quantity;
+        -:   35:    std::string photo;
+        -:   36:};

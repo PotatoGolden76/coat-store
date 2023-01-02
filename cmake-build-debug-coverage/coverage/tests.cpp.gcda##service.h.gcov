@@ -1,0 +1,25 @@
+        -:    0:Source:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/Headers/service.h
+        -:    0:Graph:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/tests.cpp.gcno
+        -:    0:Data:/mnt/c/Users/rober/Desktop/University/Repos/A5-6-OOP/cmake-build-debug-coverage/CMakeFiles/A5_6_OOP.dir/Sources/tests.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include "repo.h"
+        -:    3:#include <string>
+        -:    4:
+        -:    5:class Service
+        -:    6:{
+        -:    7:    Repo& r;
+        -:    8:public:
+        -:    9:    Service(Repo& rep);
+        -:   10:    void add(int size, const std::string &color, float price, int quantity, const std::string &photo);
+        -:   11:    void remove(int size, const std::string &color);
+        -:   12:    void update(int size, const std::string &color, float price, int quantity, const std::string &photo);
+function _ZNK7Service8get_sizeEv called 0 returned 0% blocks executed 0%
+    #####:   13:    int get_size() const { return this->r.get_size(); }
+    %%%%%:   13-block  0
+call    0 never executed
+function _ZN7Service8get_repoEv called 0 returned 0% blocks executed 0%
+    #####:   14:    Repo& get_repo(){ return this->r; }
+    %%%%%:   14-block  0
+        -:   15:};
+        -:   16:
